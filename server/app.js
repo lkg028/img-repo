@@ -16,7 +16,7 @@ app.use(cors({
 app.use(koaBody())
 
 // 静态资源
-app.use(koaStatic(path.join(__dirname, '../web'), {index: 'index.html'}))
+app.use(koaStatic(path.join(__dirname, './public'), {index: 'index.html'}))
 
 // 连接数据库
 require('./plugins/db.js')

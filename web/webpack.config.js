@@ -16,7 +16,7 @@ const config = {
   entry: './src/js/main.js',
   output: {
     filename: 'js/[name].[hash].js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, '../server/public'),
   },
   module: {
     rules: [
