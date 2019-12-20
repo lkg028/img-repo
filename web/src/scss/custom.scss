@@ -1,0 +1,46 @@
+@import './carousel.css';
+
+// Your customize CSS
+.img-item {
+  display: inline-block;
+  float: left;
+  text-align: center;
+  padding: 0.5rem;
+  img {
+    max-width: 100%;
+    vertical-align: middle;
+  }
+}
+@media (min-width: 576px) { 
+  .img-item {
+    display: block;
+    height: auto;
+    line-height: auto;
+    width: 100%;
+    img {
+      height: auto;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+  .img-item {
+    width: 50%;
+    line-height: 19rem;
+    img {
+      max-height: 20rem;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+  .img-item {
+    width: 33.33%;
+    line-height: 14rem;
+    img {
+      max-height: 15rem;
+    }
+  }
+}

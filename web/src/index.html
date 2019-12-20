@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- data-page="index" 使webpack懒加载模块 -->
+    <meta data-page="index"/>
+    <title>摩的大飙客 —— 图床</title>
+  </head>
+  <body>
+    <!-- header-nav -->
+    <header class="container mt-4 bg-light rounded p-2">
+      <nav class="navbar navbar-light">
+        <a class="navbar-brand font-weight-bold">MOMO</a>
+        <div class="d-flex align-items-center">
+          <form class="form-inline d-flex align-items-center" id="login">
+            <label>用户名<input class="form-control mx-2" type="text"/></label>
+            <label>密码<input class="form-control mx-2" type="password"/></label>
+            <button type="submit" class="btn btn-primary ml-2">登录</button>
+          </form>
+          <div id="nav-username" style="display: none;">
+            <span class="mr-2">username</span>
+            <button class="btn btn-outline-primary" id="nav-logout-btn">退出</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container mt-5">
+      <div class="card shadow my-5">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card mt-3">
+        <div class="card-header text-success font-weight-bold ">
+          <span class="iconfont mr-2">&#xe646;</span>文件列表
+        </div>
+        <div class="cart-body p-0">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+          <ul class="pagination my-2 ml-3">
+            <li class="page-item "><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card mt-3">
+        <div class="card-header text-info font-weight-bold">
+          <span class="iconfont mr-2">&#xe63c;</span>图片列表
+        </div>
+        <div class="card-body container p-1 my-2">
+          <div class="img-item">
+            <img src="./public/images/1.jpg"  alt="">
+          </div>
+          <div class="img-item">
+            <img src="./public/images/2.jpg"  alt="">
+          </div>
+          <div class="img-item">
+            <img src="./public/images/3.jpg"  alt="">
+          </div>
+          
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
