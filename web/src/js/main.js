@@ -2,6 +2,10 @@
 import 'bootstrap';
 import '../scss/index.scss';
 
+//  babel-polyfill
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
+
 // 运行代码，按需导入模块
 $(() => {
   var page = $('meta[data-page]').attr('data-page');
